@@ -98,6 +98,7 @@ body {
 /* chatbot */
 .chatbot-fab {
   margin-left: 100px;
+  margin-bottom: 10px;
   z-index: 1040;
   width: 75px;
   background-color: #079683;
