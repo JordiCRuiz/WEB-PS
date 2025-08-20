@@ -1,62 +1,121 @@
 /* Forest & Sand Theme (Bootstrap overrides + custom) */
 :root {
   --color-primary: #166534;
-  --color-secondary: #D4A373;
-  --color-accent: #2DD4BF;
-  --color-text: #1F2937;
-  --color-bg: #FAF7F2;
-  --color-surface: #FFFCF7;
-  --color-border-muted: #E7E2DA;
+  --color-secondary: #d4a373;
+  --color-accent: #2dd4bf;
+  --color-text: #1f2937;
+  --color-bg: #faf7f2;
+  --color-surface: #fffcf7;
+  --color-border-muted: #e7e2da;
 
   /* Bootstrap quick overrides */
   --bs-primary: #166534;
-  --bs-secondary: #D4A373;
-  --bs-success: #2DD4BF;
-  --bs-body-bg: #FAF7F2;
-  --bs-body-color: #1F2937;
+  --bs-secondary: #d4a373;
+  --bs-success: #2dd4bf;
+  --bs-body-bg: #faf7f2;
+  --bs-body-color: #1f2937;
   --bs-link-color: var(--bs-primary);
   --bs-link-hover-color: #0f4a23;
 }
 
-html { scroll-behavior: smooth; }
-body { font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans"; }
-
-.bg-surface { background-color: var(--color-surface) !important; }
-.bg-gradient-primary {
-  background: linear-gradient(135deg, #166534, #2DD4BF);
+html {
+  scroll-behavior: smooth;
 }
-.text-white a { color: #fff; }
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans';
+}
+
+.bg-surface {
+  background-color: var(--color-surface) !important;
+}
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #166534, #2dd4bf);
+}
+.text-white a {
+  color: #fff;
+}
 
 .hero {
-  background: radial-gradient(1200px 400px at 10% -10%, rgba(45,212,191,.2), transparent),
-              radial-gradient(800px 300px at 80% 20%, rgba(212,163,115,.25), transparent);
+  background: radial-gradient(
+      1200px 400px at 10% -10%,
+      rgba(45, 212, 191, 0.2),
+      transparent
+    ),
+    radial-gradient(
+      800px 300px at 80% 20%,
+      rgba(212, 163, 115, 0.25),
+      transparent
+    );
 }
 .hero-shape {
-  position: absolute; inset: 0; pointer-events: none;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="%23166534" stop-opacity="0.08"/><stop offset="100%" stop-color="%232DD4BF" stop-opacity="0.06"/></linearGradient></defs><rect width="1200" height="400" fill="url(%23g)" rx="24"/></svg>') center/cover no-repeat;
-  opacity: .6;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="%23166534" stop-opacity="0.08"/><stop offset="100%" stop-color="%232DD4BF" stop-opacity="0.06"/></linearGradient></defs><rect width="1200" height="400" fill="url(%23g)" rx="24"/></svg>')
+    center/cover no-repeat;
+  opacity: 0.6;
 }
 
-.hero-sub { background-color: var(--color-bg); }
+.hero-sub {
+  background-color: var(--color-bg);
+}
 
-.navbar-brand { color: var(--color-primary); }
-.navbar-brand:hover { color: #0f4a23; }
+.navbar-brand {
+  color: var(--color-primary);
+}
+.navbar-brand:hover {
+  color: #0f4a23;
+}
 
-.card { border-radius: 1rem; }
-.btn { border-radius: .8rem; }
+.card {
+  border-radius: 1rem;
+}
+.btn {
+  border-radius: 0.8rem;
+}
 
 /* WhatsApp Floating Action Button */
 .whatsapp-fab {
-  position: fixed; right: 18px; bottom: 18px; z-index: 1040;
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 56px; height: 56px; border-radius: 50%;
-  background: #ffffff; border: 1px solid var(--color-border-muted);
-  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  position: fixed;
+  right: 18px;
+  bottom: 1px;
+  z-index: 1040;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #fafaf0;
+  border: 1px solid var(--color-border-muted);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
-.whatsapp-fab:hover { box-shadow: 0 10px 28px rgba(0,0,0,.12); }
+.whatsapp-fab:hover {
+  box-shadow: 0 10px 28px rgba(9, 235, 69, 0.12);
+}
+
+/* chatbot */
+.chatbot-fab {
+  margin-left: 100px;
+  z-index: 1040;
+  width: 75px;
+  background-color: #079683;
+}
+
+div#chatbotPanel.chatbot-panel {
+  margin-left: 100px;
+  margin-right: 100px;
+}
 
 /* Focus styles for accessibility */
-:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
 
 /* Utilities */
-.py-lg-6 { padding-top: 6rem !important; padding-bottom: 6rem !important; }
+.py-lg-6 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
