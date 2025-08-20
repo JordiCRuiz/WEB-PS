@@ -1,0 +1,24 @@
+{
+  "name": "web-ps",
+  "version": "1.0.0",
+  "description": "This is the raw data for Jordi's WEB. Always busy I did not have time before. But now it is done.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordiCRuiz/WEB-PS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JordiCRuiz/WEB-PS/issues"
+  },
+  "homepage": "https://github.com/JordiCRuiz/WEB-PS#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
